@@ -1,7 +1,13 @@
-const {DISCORD, Attachment} = require("discord.js");
+//const {DISCORD, Attachment} = require("discord.js");
+const Discord = require('discord.js');
 
-
+const {Client, Attachment} = require('discord.js');
 const bot = new Client();
+
+
+
+
+
 
 
 // check the msgs sent
@@ -11,11 +17,12 @@ bot.on('message',(message)=>{
     if (firstElemString == '!'){
 
 
-        var attachment = new Attachment("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV09-5lpKKqP_xMq3I2D0B65Jy2b7FrNqgjQXn8hVvazj3J4OdIFRsY1nYrgDtxO27h8W5uZvXiSw07ljG5dE")
+        var attachment1 = new Attachment("https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV09-5lpKKqP_xMq3I2D0B65Jy2b7FrNqgjQXn8hVvazj3J4OdIFRsY1nYrgDtxO27h8W5uZvXiSw07ljG5dE")
 
-        message.channel.send(message.author,attachment);
+        message.channel.send(message.author,attachment1);
+        message.reply("https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV09-5lpKKqP_xMq3I2D0B65Jy2b7FrNqgjQXn8hVvazj3J4OdIFRsY1nYrgDtxO27h8W5uZvXiSw07ljG5dE");
         //message.reply("pong");
-        //message.channel.sendMessage(message.content);
+        // message.channel.sendMessage(message.content);
     }
 
 });
